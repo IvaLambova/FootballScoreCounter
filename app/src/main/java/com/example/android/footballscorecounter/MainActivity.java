@@ -1,13 +1,12 @@
 package com.example.android.footballscorecounter;
 
-import android.app.Activity;
+import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.view.Window;
-import android.view.WindowManager;
+import android.widget.EditText;
 import android.widget.TextView;
 
-public class MainActivity extends Activity {
+public class MainActivity extends AppCompatActivity {
 
     int goalTeamA = 0;
     int redCardTeamA = 0;
@@ -29,21 +28,17 @@ public class MainActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        // Removes the app toolbar to allow for more screen size.
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
-
         setContentView(R.layout.activity_main);
     }
 
-    /*
+    /**
      * Use onSaveInstanceState(Bundle).
      */
 
     @Override
     public void onSaveInstanceState(Bundle savedInstanceState) {
 
-        /*
+        /**
          * Calling the superclass so it can save the view hierarchy state.
          */
         super.onSaveInstanceState(savedInstanceState);
@@ -65,7 +60,7 @@ public class MainActivity extends Activity {
 
 public void onRestoreInstanceState(Bundle savedInstanceState) {
 
-    /*
+    /**
      * Calling the superclass so it can save the view hierarchy state.
      */
     super.onRestoreInstanceState(savedInstanceState);
