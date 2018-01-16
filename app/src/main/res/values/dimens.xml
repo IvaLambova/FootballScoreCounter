@@ -2,7 +2,7 @@
 <resources>
 
     <!-- Teams' names dimensions. -->
-    <dimen name="TeamName">10sp</dimen>
+    <dimen name="TeamName">18sp</dimen>
 
     <!-- Teams' score dimensions. -->
     <dimen name="TeamsScore">18sp</dimen>

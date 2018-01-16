@@ -8,6 +8,7 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+
     <!-- Teams' score style. -->
     <style name="TeamsScoreStyle" parent="AppTheme">
         <item name="android:textColor">@color/white</item>

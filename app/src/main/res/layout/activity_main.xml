@@ -39,6 +39,7 @@ android:layout_height="wrap_content">
             android:padding="@dimen/TeamName"
             android:text="@string/team_a"
             android:textColor="@color/white"
+            android:textStyle="bold"
             android:windowSoftInputMode="stateAlwaysHidden"/>
 
         <TextView
@@ -135,6 +136,7 @@ android:layout_height="wrap_content">
             android:padding="@dimen/TeamName"
             android:text="@string/team_b"
             android:textColor="@color/white"
+            android:textStyle="bold"
             android:windowSoftInputMode="stateAlwaysHidden"/>
 
         <TextView
