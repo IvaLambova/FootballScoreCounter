@@ -8,33 +8,120 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <!-- Basic style of Horizontal Linear Layout. -->
+    <style name="LinearLayoutHorizontal" parent="AppTheme">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:baselineAligned">false</item>
+    <item name="android:orientation">horizontal</item>
+    </style>
+
+    <!-- Basic style of Vertical Linear Layout. -->
+    <style name="LinearLayoutVertical" parent="AppTheme">
+        <item name="android:layout_width">@dimen/dim0</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:descendantFocusability">beforeDescendants</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <!-- Basic style of Edit Text view. -->
+    <style name="EditText" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@null</item>
+        <item name="android:cursorVisible">false</item>
+        <item name="android:gravity">center</item>
+        <item name="android:inputType">text</item>
+        <item name="android:padding">@dimen/TeamName</item>
+        <item name="android:textSize">@dimen/text_size_18</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:windowSoftInputMode">stateAlwaysHidden</item>
+        <item name="android:typeface">serif</item>
+    </style>
 
     <!-- Teams' score style. -->
     <style name="TeamsScoreStyle" parent="AppTheme">
         <item name="android:textColor">@color/white</item>
         <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/dim16</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">@dimen/TeamsScore</item>
     </style>
 
-    <!-- Red Cards style. -->
+    <!-- Red Cards' style. -->
     <style name="RedCardsStyle" parent="AppTheme">
        <item name="android:textColor">@color/red</item>
        <item name="android:textStyle">bold</item>
        <item name="android:textAllCaps">true</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">@dimen/TeamsCards</item>
     </style>
 
     <!-- Yellow Cards style. -->
-    <style name="YellowPenaltyStyle" parent="AppTheme">
+    <style name="YellowCardsStyle" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
         <item name="android:textColor">@color/yellow</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">@dimen/TeamsCards</item>
     </style>
 
     <!-- Number of red & yellow cards style. -->
-    <style name="NumberCardsStyle" parent="AppTheme">
+    <style name="NumberPenaltyCardsStyle" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/dim16</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">@dimen/TeamsCards</item>
         <item name="android:textColor">@color/white</item>
         <item name="android:textStyle">bold</item>
     </style>
 
+    <!-- Basic style of the buttons Goal, Red Cards & Yellow Cards. -->
+    <style name="ButtonsStyle" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_margin">@dimen/dim8</item>
+        <item name="android:layout_marginBottom">@dimen/dim8</item>
+        <item name="android:layout_marginLeft">@dimen/dim24</item>
+        <item name="android:layout_marginRight">@dimen/dim24</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
 
+    <!-- Basic style of the Reset button in Portrait -->
+    <style name="ResetButtonStyle" parent="AppTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_margin">@dimen/dim8</item>
+        <item name="android:layout_marginLeft">@dimen/dim24</item>
+        <item name="android:layout_marginRight">@dimen/dim24</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
 
+    <!-- Basic style of the Reset button in Landscape -->
+    <style name="ResetButtonLandscape" parent="AppTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_margin">@dimen/dim8</item>
+        <item name="android:layout_marginLeft">@dimen/dim24</item>
+        <item name="android:layout_marginRight">@dimen/dim24</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
 </resources>
