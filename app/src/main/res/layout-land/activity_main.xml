@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/soccer_field"
+    android:fillViewport="true"
+    android:isScrollContainer="false"
+    tools:context="com.example.android.footballscorecounter.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:id="@+id/linear_layout"
+            style="@style/LinearLayoutHorizontal">
+
+
+            <LinearLayout
+                style="@style/LinearLayoutVertical">
+
+                <EditText
+                    android:id="@+id/team_a"
+                    style="@style/EditText"
+                    android:text="@string/team_a" />
+
+                <TextView
+                    android:id="@+id/score_team_a"
+                    style="@style/TeamsScoreStyle"
+                    android:text="@string/score_team_a" />
+
+                <TextView
+                    style="@style/RedCardsStyle"
+                    android:text="@string/red_cards_team_a"  />
+
+                <TextView
+                    android:id="@+id/number_red_cards_team_a"
+                    style="@style/NumberPenaltyCardsStyle"
+                    android:text="@string/number_red_cards_team_a"/>
+
+                <TextView
+                    style="@style/YellowCardsStyle"
+                    android:text="@string/yellow_cards_team_a"  />
+
+                <TextView
+                    android:id="@+id/number_yellow_cards_team_a"
+                    style="@style/NumberPenaltyCardsStyle"
+                    android:text="@string/number_yellow_cards_team_a" />
+
+
+                <Button
+                    style="@style/ButtonsStyle"
+                    android:background="@drawable/green_button"
+                    android:onClick="goalForTeamA"
+                    android:text="@string/goal_team_a"/>
+
+                <Button
+                    style="@style/ButtonsStyle"
+                    android:background="@drawable/red_button"
+                    android:onClick="redCardTeamA"
+                    android:text="@string/red_card_team_a"/>
+
+                <Button
+                    style="@style/ButtonsStyle"
+                    android:background="@drawable/yellow_button"
+                    android:onClick="yellowCardTeamA"
+                    android:text="@string/yellow_card_team_a"/>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                style="@style/LinearLayoutVertical">
+
+                <EditText
+                    android:id="@+id/team_b"
+                    style="@style/EditText"
+                    android:text="@string/team_b" />
+
+                <TextView
+                    android:id="@+id/score_team_b"
+                    style="@style/TeamsScoreStyle"
+                    android:text="@string/score_team_b"/>
+
+                <TextView
+                    style="@style/RedCardsStyle"
+                    android:text="@string/red_cards_team_b" />
+
+                <TextView
+                    android:id="@+id/number_red_cards_team_b"
+                    style="@style/NumberPenaltyCardsStyle"
+                    android:text="@string/number_red_cards_team_b"/>
+
+                <TextView
+                    style="@style/YellowCardsStyle"
+                    android:text="@string/yellow_cards_team_b" />
+
+                <TextView
+                    android:id="@+id/number_yellow_cards_team_b"
+                    style="@style/NumberPenaltyCardsStyle"
+                    android:text="@string/number_yellow_cards_team_b"/>
+
+                <Button
+                    style="@style/ButtonsStyle"
+                    android:background="@drawable/green_button"
+                    android:onClick="goalForTeamB"
+                    android:text="@string/goal_team_b"/>
+
+                <Button
+                    style="@style/ButtonsStyle"
+                    android:background="@drawable/red_button"
+                    android:onClick="redCardTeamB"
+                    android:text="@string/red_card_team_b"/>
+
+                <Button
+                    style="@style/ButtonsStyle"
+                    android:background="@drawable/yellow_button"
+                    android:onClick="yellowCardTeamB"
+                    android:text="@string/yellow_card_team_b"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <Button
+            style="@style/ResetButtonLandscape"
+            android:layout_below="@id/linear_layout"
+            android:background="@drawable/reset_button"
+            android:onClick="resetScore"
+            android:text="@string/reset_button" />
+
+    </RelativeLayout>
+
+</ScrollView>

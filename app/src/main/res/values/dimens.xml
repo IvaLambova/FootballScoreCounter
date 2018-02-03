@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Teams' score text size. -->
+    <dimen name="TeamsScore">18sp</dimen>
+
+    <!-- Teams' cards and number of cards text size. -->
+    <dimen name="TeamsCards">18sp</dimen>
+
+    <!-- Text size for teams' name. -->
+    <dimen name="text_size_18">18sp</dimen>
+
+    <!-- Dimension for layout width. -->
+    <dimen name="dim0">0dp</dimen>
+
+    <!-- Dimension for layout margin. -->
+    <dimen name="dim8">8dp</dimen>
+
+    <!-- Dimension for layout margin. -->
+    <dimen name="dim16">16dp</dimen>
+
+    <!-- Teams' names padding dimensions. -->
+    <dimen name="TeamName">18dp</dimen>
+
+    <!-- Dimension for layout margin. -->
+    <dimen name="dim24">24dp</dimen>
+
+</resources>
