@@ -7,6 +7,9 @@
     // android:layout_text dimension 18sp
     <dimen name="text_size_18">18sp</dimen>
 
+    // android:layout_text dimension 24sp
+    <dimen name="text_size_24">24sp</dimen>
+
     // android:layout_padding dimension 18dp
     <dimen name="padding_18">18dp</dimen>
 
