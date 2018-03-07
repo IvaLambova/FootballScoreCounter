@@ -9,12 +9,12 @@ import android.widget.TextView;
 public class MainActivity extends Activity {
 
     // Initiate global integer variables
-    int goalTeamA = 0;
-    int redCardTeamA = 0;
-    int yellowCardTeamA = 0;
-    int goalTeamB = 0;
-    int redCardTeamB = 0;
-    int yellowCardTeamB = 0;
+    int goalTeamA;
+    int redCardTeamA;
+    int yellowCardTeamA;
+    int goalTeamB;
+    int redCardTeamB;
+    int yellowCardTeamB;
 
     // Initiate global string variables
     static final String stateGoalsTeamA = "teamAGoals";
