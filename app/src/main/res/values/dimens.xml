@@ -1,28 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!-- Teams' score text size. -->
-    <dimen name="TeamsScore">18sp</dimen>
+    // android:layout_width dimension 0dp
+    <dimen name="width_0">0dp</dimen>
 
-    <!-- Teams' cards and number of cards text size. -->
-    <dimen name="TeamsCards">18sp</dimen>
-
-    <!-- Text size for teams' name. -->
+    // android:layout_text dimension 18sp
     <dimen name="text_size_18">18sp</dimen>
 
-    <!-- Dimension for layout width. -->
-    <dimen name="dim0">0dp</dimen>
+    // android:layout_padding dimension 18dp
+    <dimen name="padding_18">18dp</dimen>
 
-    <!-- Dimension for layout margin. -->
-    <dimen name="dim8">8dp</dimen>
+    // android:layout_margin dimension 8dp
+    <dimen name="margin_8">8dp</dimen>
 
-    <!-- Dimension for layout margin. -->
-    <dimen name="dim16">16dp</dimen>
+    // android:layout_margin dimension 16dp
+    <dimen name="margin_16">16dp</dimen>
 
-    <!-- Teams' names padding dimensions. -->
-    <dimen name="TeamName">18dp</dimen>
+    // android:layout_margin dimension 24dp
+    <dimen name="margin_24">24dp</dimen>
 
-    <!-- Dimension for layout margin. -->
-    <dimen name="dim24">24dp</dimen>
 
 </resources>
