@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Football Score Counter</string>
-    <string name="team_a">Team A</string>
-    <string name="team_b">Team B</string>
+    <string name="team_a_name">Team A</string>
+    <string name="team_b_name">Team B</string>
     <string name="score_team_a">0</string>
     <string name="goal_team_a">Goal</string>
     <string name="red_card_team_a">Red Card</string>

@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends Activity {
@@ -24,8 +25,6 @@ public class MainActivity extends Activity {
     static final String stateYellowCardsTeamA = "teamAYellowCards";
     static final String stateYellowCardsTeamB = "teamBYellowCards";
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,6 +33,14 @@ public class MainActivity extends Activity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         setContentView(R.layout.activity_main);
+
+        // Sets the default name of Team A
+        EditText nameTeamA = (EditText) findViewById (R.id.team_a);
+        nameTeamA.setText(R.string.team_a_name);
+
+        // Sets the default name of Team B
+        EditText nameTeamB = (EditText) findViewById (R.id.team_b);
+        nameTeamB.setText(R.string.team_a_name);
 
     }
 
@@ -119,7 +126,6 @@ public class MainActivity extends Activity {
         TextView scoreView = (TextView) findViewById(R.id.number_yellow_cards_team_a);
         scoreView.setText(String.valueOf(score));
     }
-
 
     //Displays +1 goal for Team B when the button Goal for Team B is clicked
     public void goalForTeamB (View view) {
